@@ -35,6 +35,20 @@ export default function Admin() {
   }
 };
 
+  //create invoice
+  const createInvoice = async (quoteId) => {
+  const amount = prompt("Enter invoice amount:");
+
+  await api.post("/invoices", {
+    quote_id: quoteId,
+    amount: amount,
+    due_date: null,
+    notes: ""
+  });
+
+  alert("Invoice created!");
+  };
+
 
   return (
     <AuthLayout>
@@ -48,6 +62,13 @@ export default function Admin() {
               <th>Phone</th>
               <th>Job</th>
               <th>Status</th>
+              <th>
+                <button
+                  className="bg-black text-white px-3 py-1 rounded"
+                >
+                  <a href="/invoices">View Invoices</a>
+                </button>
+              </th>
             </tr>
           </thead>
 
@@ -68,7 +89,15 @@ export default function Admin() {
                     <option value="in_progress">In Progress</option>
                     <option value="completed">Completed</option>
                   </select>
-                </td>    
+                </td>  
+                <td>
+                  <button
+                    onClick={() => createInvoice(q.id)}
+                    className="underline"
+                  >
+                    Create Invoice
+                  </button>
+                </td>  
               </tr>
             ))}
           </tbody>

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Guest from './components/layouts/Guest'
 import Admin from './components/auth/Admin'
 import Login from './components/Login'
+import Invoices from "./components/Invoices";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
         {/* Protected */}
         <Route path="/admin" element={<Admin />} />
+        <Route path="/invoices" element={<Invoices />} />
       </Routes>
     </BrowserRouter>
   );
