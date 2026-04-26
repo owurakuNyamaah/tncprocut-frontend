@@ -1,24 +1,82 @@
 import { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import workImage1 from '../assets/images/workImage 1.jpeg';
+import workImage2 from '../assets/images/workImage 2.jpeg';
+import workImage3 from '../assets/images/workImage 3.jpeg';
+import workImage4 from '../assets/images/workImage 4.jpeg';
+import workImage5 from '../assets/images/workImage 5.jpeg';
+import workImage6 from '../assets/images/workImage 6.jpeg';
+import workImage7 from '../assets/images/workImage 7.png';
+import workImage8 from '../assets/images/workImage 8.png';
+import workImage9 from '../assets/images/workImage 9.png';
+import workImage10 from '../assets/images/workImage 10.png';
+import workImage11 from '../assets/images/workImage 11.png';
+import workImage12 from '../assets/images/workImage 12.jpeg';
+import workImage13 from '../assets/images/workImage 13.jpeg';
+import workImage14 from '../assets/images/workImage 14.jpg';
+import workImage15 from '../assets/images/workImage 15.jpeg';
+
 
 export default function Portfolio() {
   const images = [
     {
-      src: "/images/work1.jpg",
-      title: "3D Acrylic Sign – Accra",
+      src: workImage7,
+      title: "",
     },
     {
-      src: "/images/work2.jpg",
-      title: "Shopfront Branding",
+      src: workImage8,
+      title: "",
     },
     {
-      src: "/images/work3.jpg",
-      title: "Engraved Plaque",
+      src: workImage9,
+      title: "",
     },
     {
-      src: "/images/work4.jpg",
-      title: "CNC Cut Panel",
+      src: workImage1,
+      title: "",
+    },
+  
+    {
+      src: workImage2,
+      title: "",
+    },
+    {
+      src: workImage10,
+      title: "",
+    },
+    {
+      src: workImage4,
+      title: "",
+    },
+    {
+      src: workImage5,
+      title: "",
+    },
+    {
+      src: workImage6,
+      title: "",
+    },
+    {
+      src: workImage3,
+      title: "",
+    },
+    {
+      src: workImage11,
+      title: "",
+    },
+    {
+      src: workImage12,
+      title: "",
+    },{
+      src: workImage13,
+      title: "",
+    },{
+      src: workImage14,
+      title: "",
+    },{
+      src: workImage15,
+      title: "",
     },
   ];
 

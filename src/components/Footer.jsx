@@ -28,10 +28,12 @@ export default function Footer() {
         {/* Contact */}
         <div>
           <h3 className="font-semibold mb-3">Contact</h3>
-          <p className="text-gray-600">Ghana</p>
+          <p className="text-gray-600">Afuaman - Accra, Ghana</p>
+          <p className="text-gray-600">tncprocut@gmail.com</p>
+          <p className="text-gray-600">+44 7459 731254</p>
           <a
-            href="https://wa.me/233XXXXXXXXX"
-            className="block mt-2 text-black font-medium"
+            href="https://wa.me/447459731254"
+            className="block mt-2 text-black font-medium underline"
           >
             Chat on WhatsApp
           </a>
@@ -44,7 +46,7 @@ export default function Footer() {
       </div>
 
       <a
-  href="https://wa.me/+447551824182"
+  href="https://wa.me/447459731254"
   className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
   target="_blank"
   rel="noopener"
